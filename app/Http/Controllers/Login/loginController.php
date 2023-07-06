@@ -22,11 +22,7 @@ class loginController extends Controller{
         if ($pass == env('DEFAULT_PASSWORD')) {
             $action = 'change-password';
         }
-        // $options = [
-        //     'cost'=> 12
-        // ];
-        // $pass = password_hash($pass,PASSWORD_DEFAULT,$options);
-        // echo $pass;
+        
         try {
             $user = $this->model->getUser($user);
             if(sizeOf($user) != 0){
