@@ -40,9 +40,4 @@ class registroModel extends Model
         }
         
     }
-
-    // public function eliminar($id){
-    //     $sql = "DELETE FROM customers WHERE customers_id=?";
-    //     return DB::select($sql,[$id]);
-    // }
 }

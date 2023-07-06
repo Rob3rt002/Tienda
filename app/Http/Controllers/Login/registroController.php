@@ -71,20 +71,14 @@ class registroController extends Controller
      
     public function update(Request $request, registroModel $registroModel)
     {
-        //
+        
     }
 
     /**
      * Remove the specified resource from storage.
      
      public function destroy( $id){
-        $model = new registroModel();
-        $result = $model->eliminar($id); 
-        // var_dump($result);
-        if ($result) {
-            return $this->returnData([], "Eliminacion Exitosa");
-        }else {
-            return $this->returnData([], "Eliminacion Errada");
+        
         }
     }*/
 }
