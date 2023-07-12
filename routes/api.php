@@ -16,9 +16,9 @@ use App\Http\Controllers\Login\registroController;
 |
 */
 
-Route::group(['middleware'], function () {
-    Route::apiResource('/producto', productoController::class);
-    Route::apiResource('/registro', registroController::class);
+Route::group(['middleware' => ['cors']], function () {
+    Route::apiResource('/productos', productoController::class);
+    // Route::apiResource('/registro', registroController::class);
  });
 
 //  Route::group(['middleware'], function () {
